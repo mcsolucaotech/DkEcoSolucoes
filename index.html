@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.add("js");</script>
+  <meta
+    name="description"
+    content="Coleta gratuita de eletrônicos e eletrodomésticos, mesmo quebrados ou com defeito, em São Paulo e no litoral. Consulte a disponibilidade na sua cidade."
+  >
+  <meta name="theme-color" content="#073f68">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+
+  <title>Descarte eletrônico gratuito em SP e litoral | DK Eco Soluções</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="cabecalho" id="cabecalho">
+    <button
+      class="menu-backdrop"
+      id="menuBackdrop"
+      type="button"
+      aria-label="Fechar menu"
+      aria-hidden="true"
+      tabindex="-1"
+    ></button>
+
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="logo" href="#inicio" aria-label="DK Eco Soluções - Início">
+        <img src="img/dk-eco-logo.svg" alt="Logomarca da DK Eco Soluções">
+        <b><strong>DK</strong> <span>Eco Soluções</span></b>
+      </a>
+
+      <button
+        class="menu-mobile"
+        id="menuMobile"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        <span class="menu-icone" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#materiais">O que coletamos</a></li>
+        <li><a href="#processo">Como funciona</a></li>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+        <li><a href="#redes-sociais">Redes sociais</a></li>
+        <li>
+          <a
+            class="botao botao-verde"
+            href="https://wa.me/5511976517285?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20coleta%20gratuita."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Agendar coleta pelo WhatsApp"
+          >Agendar</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-grid container">
+        <div class="hero-texto">
+          <span class="tag">Coleta gratuita em SP e litoral</span>
+
+          <h1>
+            Eletrônicos quebrados? <span>A coleta é gratuita.</span>
+          </h1>
+
+          <p>
+            Coletamos eletrônicos e eletrodomésticos antigos, quebrados ou com
+            defeito em São Paulo e no litoral. Consulte o atendimento na sua
+            cidade e agende pelo WhatsApp.
+          </p>
+
+          <div class="hero-acoes">
+            <a
+              class="botao botao-verde"
+              href="https://wa.me/5511976517285?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20coleta%20gratuita."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Agendar coleta pelo WhatsApp"
+            >
+              <svg class="icone-whatsapp" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <path d="M16 2.75a12.5 12.5 0 0 0-10.7 18.96L3.7 28.3l6.8-1.78A12.5 12.5 0 1 0 16 2.75Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                <path d="M11.27 9.4c-.28-.62-.57-.63-.84-.64h-.72c-.25 0-.66.09-1 .46-.35.38-1.31 1.28-1.31 3.13s1.34 3.63 1.53 3.88c.19.25 2.57 4.12 6.34 5.61 3.13 1.23 3.77.99 4.45.93.68-.06 2.2-.9 2.51-1.78.31-.87.31-1.62.22-1.78-.09-.16-.34-.25-.72-.44-.38-.19-2.2-1.09-2.54-1.22-.34-.12-.59-.19-.84.19-.25.37-.96 1.22-1.18 1.47-.22.25-.44.28-.81.09-.38-.19-1.59-.59-3.02-1.87-1.12-1-1.89-2.24-2.11-2.62-.22-.38-.02-.59.16-.78.16-.16.38-.44.56-.66.19-.22.25-.37.37-.62.13-.25.06-.47-.03-.66L11.27 9.4Z" fill="currentColor" />
+              </svg>
+              Agendar coleta gratuita
+            </a>
+
+            <a class="botao botao-claro" href="#materiais">
+              Ver itens coletados
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-imagem revelar">
+          <img
+            class="hero-imagem-principal"
+            src="img/imagemIlustradaAnimacao.png"
+            alt="Ilustração de pessoas entregando uma TV e um liquidificador a um profissional de coleta"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section destaque-coleta" aria-labelledby="destaque-coleta-titulo">
+      <div class="container">
+        <div class="destaque-coleta-topo revelar">
+          <span class="tag">Coleta consciente</span>
+          <h2 class="titulo-section" id="destaque-coleta-titulo">
+            Eletrônicos sem uso? A coleta começa na sua casa.
+          </h2>
+          <p class="descricao-section">
+            Agende sua coleta gratuita e consulte a disponibilidade na sua
+            cidade com a equipe da DK Eco Soluções.
+          </p>
+        </div>
+
+        <figure class="destaque-coleta-figura revelar">
+          <img
+            src="img/Coleta%20de%20Eletr%C3%B4nicos%20na%20Porta%20de%20Casa.png"
+            alt="Moradora entrega uma caixa com eletrônicos a um coletor uniformizado; ao lado, a equipe organiza aparelhos para transporte."
+            title="Imagem ilustrativa de uma coleta domiciliar agendada."
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <section class="section materiais" id="materiais">
+      <div class="container">
+        <div class="materiais-topo revelar">
+          <span class="tag">O que coletamos</span>
+          <h2 class="titulo-section">Aparelhos esquecidos também podem sair</h2>
+          <p class="descricao-section">
+            Coletamos eletrônicos e eletrodomésticos antigos, quebrados ou com
+            defeito, como geladeiras, TVs, ventiladores e pequenos aparelhos.
+            Consulte a disponibilidade na sua cidade.
+          </p>
+        </div>
+
+        <div class="itens-grid">
+          <article class="item-card revelar">
+            <img
+              src="img/televisao-antiga.jpg"
+              alt="Televisão antiga"
+              loading="lazy"
+              decoding="async"
+            >
+            <div class="item-card-conteudo">
+              <h3>TVs e monitores</h3>
+              <p>Televisores antigos, telas e aparelhos de som.</p>
+            </div>
+          </article>
+
+          <article class="item-card revelar revelar-atraso-1">
+            <div class="item-card-fotos">
+              <img
+                src="img/geladeira-tv-retro.jpg"
+                alt="Geladeira antiga"
+                loading="lazy"
+                decoding="async"
+              >
+              <img
+                src="img/ventilador-antigo.jpg"
+                alt="Ventilador antigo"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="item-card-conteudo">
+              <h3>Eletrodomésticos</h3>
+              <p>Geladeiras, ventiladores e outros aparelhos sem uso.</p>
+            </div>
+          </article>
+
+          <article class="item-card revelar">
+            <div class="item-card-fotos">
+              <img
+                src="img/controle-remoto.jpg"
+                alt="Controle remoto"
+                loading="lazy"
+                decoding="async"
+              >
+              <img
+                src="img/secador.jpg"
+                alt="Secador de cabelo"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="item-card-conteudo">
+              <h3>Pequenos aparelhos</h3>
+              <p>Controles, secadores, cabos e carregadores.</p>
+            </div>
+          </article>
+
+          <article class="item-card revelar revelar-atraso-1">
+            <div class="item-card-fotos">
+              <img
+                src="img/computadores-antigos.jpg"
+                alt="Computadores antigos"
+                loading="lazy"
+                decoding="async"
+              >
+              <img
+                src="img/celulares-antigos.jpg"
+                alt="Celulares antigos"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="item-card-conteudo">
+              <h3>Informática e celulares</h3>
+              <p>Computadores, notebooks, celulares e acessórios.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section processo" id="processo">
+      <div class="container">
+        <div class="processo-topo revelar">
+          <span class="tag">Como funciona</span>
+          <h2 class="titulo-section">Coletar ficou simples</h2>
+          <p class="descricao-section">
+            Envie os itens e sua cidade para consultar a disponibilidade e
+            combinar a coleta.
+          </p>
+        </div>
+
+        <div class="etapas">
+          <article class="etapa revelar">
+            <div class="etapa-icone">1</div>
+            <h3>Informe o que deseja descartar</h3>
+            <p>Liste os equipamentos e, se puder, diga a quantidade.</p>
+          </article>
+
+          <article class="etapa revelar revelar-atraso-1">
+            <div class="etapa-icone">2</div>
+            <h3>Consulte a disponibilidade</h3>
+            <p>Informe sua cidade para a equipe confirmar o atendimento e as condições.</p>
+          </article>
+
+          <article class="etapa revelar revelar-atraso-2">
+            <div class="etapa-icone">3</div>
+            <h3>Combine os próximos passos</h3>
+            <p>Com a coleta confirmada, alinhe os detalhes diretamente com a equipe.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quem-somos" id="quem-somos">
+      <div class="container">
+        <div class="quem-somos-topo revelar">
+          <span class="tag">Quem somos</span>
+          <h2 class="titulo-section">
+            Uma ideia simples para tornar o descarte mais fácil
+          </h2>
+          <p class="descricao-section">
+            A DK Eco Soluções nasceu em 2026 de uma necessidade comum:
+            encontrar uma forma prática e responsável de encaminhar aparelhos
+            eletrônicos e eletrodomésticos sem uso. Ao perceber a dificuldade
+            de encontrar esse tipo de serviço, transformamos o desafio em uma
+            iniciativa para facilitar a coleta e incentivar o descarte
+            consciente.
+          </p>
+          <p class="descricao-section">
+            Nosso propósito é ajudar a liberar espaço e apoiar a destinação
+            responsável desses equipamentos, aproximando praticidade e cuidado
+            ambiental.
+          </p>
+        </div>
+
+        <div class="proposito-grid">
+          <article class="proposito-card revelar">
+            <span class="proposito-rotulo">Nosso propósito</span>
+            <h3>Missão</h3>
+            <p>
+              Facilitar a coleta e a destinação responsável de eletrônicos e
+              eletrodomésticos, promovendo conscientização e o reaproveitamento
+              de materiais sempre que possível.
+            </p>
+          </article>
+
+          <article class="proposito-card revelar revelar-atraso-1">
+            <span class="proposito-rotulo">Onde queremos chegar</span>
+            <h3>Visão</h3>
+            <p>
+              Ser referência regional em coleta e logística reversa de
+              resíduos eletrônicos, reconhecida por facilitar o descarte
+              consciente e inspirar práticas sustentáveis.
+            </p>
+          </article>
+
+          <article class="proposito-card revelar revelar-atraso-2">
+            <span class="proposito-rotulo">Como agimos</span>
+            <h3>Valores</h3>
+            <ul class="valores-lista">
+              <li>
+                <strong>Sustentabilidade prática</strong>
+                <span>Cuidado ambiental em ações do dia a dia.</span>
+              </li>
+              <li>
+                <strong>Reutilização</strong>
+                <span>Reaproveitamento e destinação adequada, quando possível.</span>
+              </li>
+              <li>
+                <strong>Conscientização</strong>
+                <span>Orientação para escolhas de descarte mais conscientes.</span>
+              </li>
+              <li>
+                <strong>Confiança e transparência</strong>
+                <span>Clareza e responsabilidade em cada atendimento.</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section duvidas" id="duvidas">
+      <div class="container">
+        <div class="duvidas-topo revelar">
+          <span class="tag">Dúvidas frequentes</span>
+          <h2 class="titulo-section">Antes de agendar</h2>
+          <p class="descricao-section">
+            Tire suas dúvidas e consulte pelo WhatsApp se a coleta está disponível
+            na sua cidade.
+          </p>
+        </div>
+
+        <div class="duvidas-lista revelar">
+          <details class="duvida">
+            <summary>A coleta é gratuita?</summary>
+            <p>Sim. A coleta não tem custo. Consulte a disponibilidade do atendimento na sua cidade.</p>
+          </details>
+
+          <details class="duvida">
+            <summary>Vocês recolhem aparelhos quebrados ou com defeito?</summary>
+            <p>Sim. Coletamos eletrônicos e eletrodomésticos antigos, quebrados ou com defeito. Consulte a disponibilidade na sua cidade para confirmar o atendimento.</p>
+          </details>
+
+          <details class="duvida">
+            <summary>Quais itens posso encaminhar?</summary>
+            <p>TVs, geladeiras, ventiladores, secadores, controles, computadores, celulares e outros itens eletrônicos. Se não encontrar seu aparelho na lista, pergunte à equipe.</p>
+          </details>
+
+          <details class="duvida">
+            <summary>Como descubro se atendem minha região?</summary>
+            <p>Atendemos em São Paulo e no litoral paulista. Envie sua cidade pelo WhatsApp para confirmar a disponibilidade e combinar a coleta.</p>
+          </details>
+
+          <details class="duvida">
+            <summary>O que preciso informar para solicitar?</summary>
+            <p>Diga quais itens deseja descartar, a quantidade aproximada e sua cidade. Assim a equipe pode orientar você.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contato" id="contato">
+      <div class="contato-box container revelar">
+        <div class="contato-info">
+          <span class="tag">Sem custo de coleta</span>
+          <h2>Pronto para liberar espaço?</h2>
+          <p>Coleta gratuita em São Paulo e no litoral paulista. Consulte a disponibilidade na sua cidade.</p>
+        </div>
+
+        <div class="contato-acoes">
+          <a
+            class="botao botao-verde"
+            href="https://wa.me/5511976517285?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20coleta%20gratuita."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Agendar coleta gratuita pelo WhatsApp"
+          >Agendar coleta ↗</a>
+
+          <div class="contato-redes" id="redes-sociais">
+            <span class="contato-redes-titulo">Acompanhe a DK</span>
+            <div class="redes-cards">
+              <a
+                class="rede-card rede-card-instagram"
+                href="https://www.instagram.com/dkdescarte?vrfl=MXhqdHRvdjM0dDFvcA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Instagram da DK Eco Soluções em nova aba"
+              >
+                <span class="rede-icone" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2" />
+                    <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                    <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+                  </svg>
+                </span>
+                <span class="rede-texto"><strong>Instagram</strong><small>@dkdescarte</small></span>
+                <span class="rede-seta" aria-hidden="true">↗</span>
+              </a>
+              <a
+                class="rede-card rede-card-tiktok"
+                href="https://www.tiktok.com/@dkdescarte?_r=1&amp;_t=ZS-9AmIYdgwVbc"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir TikTok da DK Eco Soluções em nova aba"
+              >
+                <span class="rede-icone" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path fill="currentColor" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.35V2h-3.9v13.67a2.9 2.9 0 1 1-2.9-2.9c.31 0 .61.05.9.14V8.93a6.84 6.84 0 0 0-.9-.06 6.8 6.8 0 1 0 6.8 6.8V9.52a8.72 8.72 0 0 0 5.1 1.64V7.27a4.85 4.85 0 0 1-1.33-.58Z" />
+                  </svg>
+                </span>
+                <span class="rede-texto"><strong>TikTok</strong><small>@dkdescarte</small></span>
+                <span class="rede-seta" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-grid container">
+      <div>
+        <a class="logo" href="#inicio">
+          <img src="img/dk-eco-logo.svg" alt="DK Eco Soluções">
+          <b><strong>DK</strong> <span>Eco Soluções</span></b>
+        </a>
+
+        <p class="rodape-texto">
+          Coleta gratuita de eletrônicos e eletrodomésticos, mesmo quebrados ou com defeito, em São Paulo e no litoral.
+        </p>
+      </div>
+
+      <div>
+        <h3>Navegação</h3>
+        <ul class="rodape-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#materiais">O que coletamos</a></li>
+          <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#duvidas">Dúvidas frequentes</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#redes-sociais">Redes sociais</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contato</h3>
+        <ul class="rodape-links">
+          <li>
+            <a
+              href="https://wa.me/5511976517285?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20coleta%20gratuita."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp: +55 11 97651-7285
+            </a>
+          </li>
+          <li>
+            <a href="tel:+5511976517285">Ligar:&nbsp;+55&nbsp;11&nbsp;97651&#8209;7285</a>
+          </li>
+          <li>Atendimento sob consulta</li>
+          <li>DK Eco Soluções</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Redes sociais</h3>
+        <div class="rodape-redes">
+          <a
+            class="rodape-rede"
+            href="https://www.instagram.com/dkdescarte?vrfl=MXhqdHRvdjM0dDFvcA=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir Instagram da DK Eco Soluções em nova aba"
+          >
+            <span class="rodape-rede-icone instagram" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2" />
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+              </svg>
+            </span>
+            <span><strong>Instagram</strong><small>@dkdescarte</small></span>
+            <span class="rodape-rede-seta" aria-hidden="true">↗</span>
+          </a>
+          <a
+            class="rodape-rede"
+            href="https://www.tiktok.com/@dkdescarte?_r=1&amp;_t=ZS-9AmIYdgwVbc"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir TikTok da DK Eco Soluções em nova aba"
+          >
+            <span class="rodape-rede-icone tiktok" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path fill="currentColor" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.35V2h-3.9v13.67a2.9 2.9 0 1 1-2.9-2.9c.31 0 .61.05.9.14V8.93a6.84 6.84 0 0 0-.9-.06 6.8 6.8 0 1 0 6.8 6.8V9.52a8.72 8.72 0 0 0 5.1 1.64V7.27a4.85 4.85 0 0 1-1.33-.58Z" />
+              </svg>
+            </span>
+            <span><strong>TikTok</strong><small>@dkdescarte</small></span>
+            <span class="rodape-rede-seta" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright container">
+      <span>© <span id="ano"></span> DK Eco Soluções.</span>
+      <span>Descarte consciente. Futuro sustentável.</span>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-fixo"
+    href="https://wa.me/5511976517285?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20coleta%20gratuita."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Agendar coleta pelo WhatsApp"
+    title="Agendar coleta"
+  >
+    <svg class="icone-whatsapp" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M16 2.75a12.5 12.5 0 0 0-10.7 18.96L3.7 28.3l6.8-1.78A12.5 12.5 0 1 0 16 2.75Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+      <path d="M11.27 9.4c-.28-.62-.57-.63-.84-.64h-.72c-.25 0-.66.09-1 .46-.35.38-1.31 1.28-1.31 3.13s1.34 3.63 1.53 3.88c.19.25 2.57 4.12 6.34 5.61 3.13 1.23 3.77.99 4.45.93.68-.06 2.2-.9 2.51-1.78.31-.87.31-1.62.22-1.78-.09-.16-.34-.25-.72-.44-.38-.19-2.2-1.09-2.54-1.22-.34-.12-.59-.19-.84.19-.25.37-.96 1.22-1.18 1.47-.22.25-.44.28-.81.09-.38-.19-1.59-.59-3.02-1.87-1.12-1-1.89-2.24-2.11-2.62-.22-.38-.02-.59.16-.78.16-.16.38-.44.56-.66.19-.22.25-.37.37-.62.13-.25.06-.47-.03-.66L11.27 9.4Z" fill="currentColor" />
+    </svg>
+    <span>Fale no WhatsApp</span>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
