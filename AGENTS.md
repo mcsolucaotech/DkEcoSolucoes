@@ -63,6 +63,6 @@
 ## Convenções
 
 - Documentação e commits em português; comandos e nomes técnicos permanecem como estão.
-- `assets/js/config.js` é a fonte única dos dados de negócio (nome, WhatsApp, região, etc.). O `index.html` atual usa valores hardcoded; ao atualizar dados, sincronize `config.js` e, se usar os hooks `data-*` do `main.js`, adicione os atributos correspondentes no HTML.
+- Os dados de negócio (nome, WhatsApp `5511976517285`, região) estão no `assets/index.html`. Ao mudar o número, atualize todos os links `wa.me` e `tel:`.
 - Não adicionar hooks Git, bloquear `main`, exigir branch/worktree nem criar pre-commit/pre-push por padrão.
-- Imagens não usadas e `.DS_Store` não são apagadas automaticamente; documente e confirme antes de remover.
+- Não reintroduzir imagens sem referência no HTML nem arquivos `.DS_Store`.

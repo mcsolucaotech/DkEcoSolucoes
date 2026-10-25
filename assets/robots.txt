@@ -1,5 +1,4 @@
-# Substitua SEU-DOMINIO.com.br pelo domínio publicado antes de colocar no ar.
+# Sitemap: acrescente a linha abaixo só quando o domínio real existir e o sitemap.xml estiver publicado.
+# Sitemap: https://www.seudominio.com.br/sitemap.xml
 User-agent: *
 Allow: /
-
-Sitemap: https://SEU-DOMINIO.com.br/sitemap.xml

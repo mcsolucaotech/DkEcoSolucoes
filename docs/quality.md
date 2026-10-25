@@ -19,7 +19,7 @@
 - **Links externos** (`wa.me`, Instagram, TikTok, Google Fonts): o `verify` pula URLs absolutas para manter o gate estável e offline-friendly. Conferir manualmente, em especial `wa.me/5511976517285`, antes de publicar.
 - **Verificação visual/acessibilidade**: sem `agent-browser`/Chrome DevTools MCP, os critérios de `docs/design.md` são inspecionados à mão (navegação por teclado, contraste, quebras de layout, `prefers-reduced-motion`, `<details>`).
 - **Consistência de SEO**: `canonical`/Open Graph/`sitemap.xml`/`CNAME` dependem do domínio real; confirmar só após o domínio ser definido.
-- **Lint de JS**: não há linter JS (apenas 2 arquivos pequenos, sem build); revisar mudanças no `main.js`/`config.js` por leitura e teste no navegador.
+- **Lint de JS**: não há linter JS (um arquivo pequeno, sem build); revisar mudanças no `main.js` por leitura e teste no navegador.
 
 ## Linha de base (antes desta adoção)
 
@@ -30,7 +30,7 @@ Não existiam checks automatizados. Esta adoção introduz `npm run verify`. Fal
 - **Fonte**: toolkit prompt 13, revisão `790a895` (obtenha de `github.com/soumatheusgomes/vibe-coding-toolkit` se precisar do original).
 - **Prompt adaptado**: `docs/security-review.md` (autocontido, adaptado a este repo). Passe o modo (repositório ou diff com base/head) e o destino do relatório.
 - **Modo**: **read-only**; relatório **privado**, fora do repositório por padrão; redija evidência que contenha dados de negócio (WhatsApp, e-mail) e não exponha segredos.
-- **Escopo típico deste site**: limites de confiança (sem backend, só cliente); dados de negócio em `config.js`; links externos (`wa.me`, redes sociais); metadados/SEO; licenciamento de imagens; devDependencies (`html-validate`, `linkinator`).
+- **Escopo típico deste site**: limites de confiança (sem backend, só cliente); dados de negócio no `index.html`; links externos (`wa.me`, redes sociais); metadados/SEO; licenciamento de imagens; devDependencies (`html-validate`, `linkinator`).
 - **Fallback**: sem `differential-review` instalado, a revisão manual por rastreamento de código é o fallback explícito. Ausência de achados **não** é garantia de segurança.
 
 ## Harness2 (método nativo)

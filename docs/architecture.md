@@ -11,8 +11,7 @@ Site estático de página única, sem build, sem framework, sem backend e sem ba
 - `assets/` — **raiz do site** servida ao visitante.
   - `index.html` — página única, estrutura semântica, metadados e links de contato.
   - `css/style.css` — layout responsivo, tokens de design, animações de revelação.
-  - `js/config.js` — `window.SITE_CONFIG`: dados configuráveis de negócio (nome, WhatsApp, região, email, siteUrl, endereço, descrição).
-  - `js/main.js` — menu mobile, cabeçalho ao rolar, revelação por `IntersectionObserver`, ano do rodapé, JSON-LD `Organization` condicional.
+  - `js/main.js` — menu mobile, cabeçalho ao rolar, revelação por `IntersectionObserver` e ano do rodapé.
   - `img/` — logotipo, favicons e fotografias de apoio (créditos em `assets/README.md`).
   - `robots.txt` — diretivas para rastreadores.
   - `CNAME` — placeholder do domínio (a preencher).
@@ -21,20 +20,16 @@ Site estático de página única, sem build, sem framework, sem backend e sem ba
 
 ## Entry points
 
-- Navegador: `assets/index.html` (carrega `css/style.css` e `js/main.js` com `defer`; `js/config.js` é lido por `main.js` via `window.SITE_CONFIG`).
+- Navegador: `assets/index.html` (carrega `css/style.css` e `js/main.js` com `defer`).
 - Desenvolvimento: `python3 -m http.server 8000` a partir de `assets/`.
 - Verificação: `npm run verify`.
 
 ## Limites e contratos
 
 - **Sem backend/DB/auth**: não há servidor, persistência nem autenticação. Toda a lógica é no cliente.
-- **Contato só por WhatsApp**: os links `wa.me/5511976517285` e `tel:+5511976517285` estão hardcoded no HTML. `config.js` e `main.js` suportam uma via alternativa por atributos `data-*` (`data-whatsapp-link`, `data-business-name`, `data-region`, `data-email-link`, `data-phone-link`), **não presentes** no HTML atual — ver divergência abaixo.
+- **Contato só por WhatsApp**: os links `wa.me/5511976517285` e `tel:+5511976517285` estão no HTML. Ao trocar o número, atualize todas as ocorrências.
 - **SEO**: `title` e `meta description` definidos. **Ausentes**: `canonical`, Open Graph, Twitter Cards e `sitemap.xml`. `robots.txt` aponta para um sitemap com domínio de exemplo (`SEU-DOMINIO.com.br`).
 - **Acessibilidade**: HTML semântico, `alt` em imagens, foco visível, suporte parcial a `prefers-reduced-motion`. A revelação por `.revelar` originalmente escondia conteúdo sem JS — mitigada por progressive enhancement (ver `docs/design.md`).
-
-## Divergência conhecida (config.js × index.html)
-
-`main.js` lê `window.SITE_CONFIG` e procura elementos com `data-business-name`, `data-region`, `data-whatsapp-link`, `data-email-link` e `data-phone-link`. O `index.html` atual **não tem** esses atributos — os valores (nome "DK Eco Soluções", WhatsApp `5511976517285`) estão hardcoded diretamente no HTML. Resultado: as funções de preenchimento/contato do `main.js` são inertes neste HTML, e o JSON-LD `Organization` não é injetado porque `siteUrl` está vazio. Ao atualizar dados de negócio, sincronize `config.js` e, se quiser usar a via `data-*`, adicione os atributos no HTML.
 
 ## Decisões técnicas
 

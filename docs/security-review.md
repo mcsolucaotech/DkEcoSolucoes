@@ -42,7 +42,7 @@ Construa um modelo de ameaça compacto do código real: ativos valiosos, capacid
 Trace entrada não confiável do entry point até a validação/autorização e a operação sensível. Inspecione caminhos permitidos e negados, callers compartilhados, comportamento de falha e testes existentes. Verifique só áreas relevantes:
 
 - Autenticação, sessões, recuperação de conta, autorização de papel/objeto e isolamento de tenant; verifique enforce no servidor e ownership em cada caminho alcançável. (Neste site: sem backend → sem auth server-side; observar.)
-- Ciclo de vida e exposição de segredos via bundles de cliente, logs, erros, exemplos e CI; redija valores e descreva só local/tipo. (Aqui: `config.js` contém dados públicos de negócio, não segredos; confirmar que nenhum segredo vaze.)
+- Ciclo de vida e exposição de segredos via bundles de cliente, logs, erros, exemplos e CI; redija valores e descreva só local/tipo. (Aqui: nome, WhatsApp e região são dados públicos no `index.html`, não segredos; confirmar que nenhum segredo vaze.)
 - Injeção e interpretação insegura: queries, shell, templates, HTML do navegador, desserialização e execução dinâmica. (Aqui: `main.js` usa majoritariamente `textContent` e injeta JSON-LD via `textContent` de `<script>`; conferir ausência de `innerHTML` com dados não confiáveis.)
 - Caminhos de arquivo, traversal, uploads, extração de arquivos, downloads e SSRF, incluindo redirecionamentos e validação de destino quando houver requisições de saída.
 - Proteção de dados, uso criptográfico, autenticidade/replay de webhook, invariantes de negócio, limites de recursos e mudanças de estado concorrentes quando relevante.

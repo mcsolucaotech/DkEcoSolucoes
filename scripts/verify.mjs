@@ -46,7 +46,7 @@ const server = http.createServer((req, res) => {
 function run(cmd, args, label) {
   return new Promise((resolve) => {
     console.log(`\n▶ ${label}`);
-    const p = spawn(cmd, args, { stdio: "inherit" });
+    const p = spawn(cmd, args, { stdio: "inherit", shell: process.platform === "win32" });
     p.on("error", (err) => {
       console.error(`erro ao executar ${cmd}: ${err.message}`);
       resolve(false);

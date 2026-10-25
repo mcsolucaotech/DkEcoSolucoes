@@ -25,15 +25,14 @@ Landing page estática de página única que apresenta o serviço de coleta grat
 - Contato **somente por WhatsApp** (links `wa.me` e `tel:`); não há captura de dados do visitante.
 - Serviço **gratuito** e atendimento **sob consulta por cidade** — toda afirmação de gratuidade e cobertura no site deve refletir a operação real; não inventar cidades nem itens.
 - Deploy via **GitHub Pages**; domínio próprio ainda não definido (ver `docs/onboarding.md`).
-- **Sem dados sensíveis** no repositório; `config.js` contém dados públicos de negócio (nome, WhatsApp), nunca segredos.
+- **Sem dados sensíveis** no repositório. Nome, WhatsApp e região são dados públicos no `index.html`, nunca segredos.
 
 ## Suposições e pendências (confirmar antes de publicar)
 
 - **Domínio real** não definido; `canonical`, `og:url`, `og:image`, `sitemap.xml` e `CNAME` usam placeholders ou estão ausentes. Sem domínio, não publicar metadados de URL.
 - **Cidades atendidas**: o site diz "São Paulo e litoral" com consulta por cidade; a lista específica não está confirmada no código.
 - **Ano de fundação**: o texto de "Quem somos" diz "nasceu em 2026"; não confirmado por outra fonte — manter só se a empresa confirmar.
-- **E-mail e endereço comercial**: vazios em `config.js`; só preencher se houver dado público real.
-- **Imagens sem uso** (ex.: "Colagem Colorida de Reciclagem Eletrônica") contêm mensagens não confirmadas; não publicar até validar o conteúdo da arte.
+- **E-mail e endereço comercial**: não publicados; só adicionar ao HTML se houver dado público real.
 
 ## Critérios de aceitação
 

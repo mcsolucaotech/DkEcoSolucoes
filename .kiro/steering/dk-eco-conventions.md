@@ -13,7 +13,7 @@ Site estático (HTML/CSS/JS puro, sem build/backend/DB) de página única. Deplo
 - Não introduzir framework, build, backend, banco nem dependências de runtime.
 - Não publicar, commitar/pushar, criar hooks Git nem bloquear `main` sem pedido explícito.
 - Não inventar dados comerciais (domínio, cidades atendidas, ano de fundação, e-mail/endereço) — registrar como pendência.
-- `assets/js/config.js` é a fonte dos dados de negócio; sincronize com o HTML ao mudar.
+- Os dados de negócio (nome, WhatsApp, região) estão no `assets/index.html`. Ao mudar o número, atualize todos os links `wa.me` e `tel:`.
 - Documentação e commits em português; comandos/nomes técnicos em inglês.
 - Sem `agent-browser`/Chrome DevTools MCP: verificação visual é manual (critérios em `docs/design.md`).
 - Skills/MCPs do toolkit (Superpowers, Context7, Graphify, etc.) indisponíveis nesta sessão — use fontes oficiais e registre a limitação.

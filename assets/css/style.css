@@ -46,10 +46,7 @@
       text-decoration: none;
     }
 
-    button,
-    input,
-    select,
-    textarea {
+    button {
       font: inherit;
     }
 

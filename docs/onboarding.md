@@ -11,23 +11,11 @@ Pré-requisitos: Node.js (para as verificações) e Python 3 (para servir o site
 
 ## Dados de negócio
 
-Edite `assets/js/config.js` antes de publicar:
-
-- `businessName`: "DK Eco Soluções".
-- `whatsappNumber`: `5511976517285` (somente dígitos, formato internacional).
-- `region`: região efetivamente atendida.
-- `email`: e-mail real de atendimento, ou vazio.
-- `siteUrl`: domínio publicado com `https://`, sem barra final (habilita o JSON-LD `Organization`).
-- `publicAddress`: endereço comercial público, ou vazio.
-- `description`: descrição factual do serviço.
-
-Mantenha gratuidade, cobertura, certificações, parceiros, volume, licenças e garantias alinhados à operação real.
-
-> Nota: o `index.html` atual usa esses valores hardcoded; ao mudar dados, sincronize `config.js` e o HTML (ou adicione os atributos `data-*` que `main.js` procura — ver `docs/architecture.md`).
+Nome, WhatsApp (`5511976517285`), região e textos estão no `assets/index.html`. Mantenha gratuidade, cobertura, certificações, parceiros, volume, licenças e garantias alinhados à operação real. E-mail e endereço comercial só entram no HTML se houver dado público real.
 
 ## WhatsApp
 
-Os botões abrem uma conversa no WhatsApp do número informado, sem formulário nem cadastro. Ao trocar o número, atualize todos os links `wa.me` no `index.html` e o `whatsappNumber` em `config.js`, e teste no celular e no desktop.
+Os botões abrem uma conversa no WhatsApp do número informado, sem formulário nem cadastro. Ao trocar o número, atualize todos os links `wa.me` e `tel:` no `index.html` e teste no celular e no desktop.
 
 ## Publicar no GitHub Pages
 
@@ -71,7 +59,7 @@ Quando o domínio existir, **adicione** no `<head>` os metadados ausentes: `link
 
 ## Checklist de publicação
 
-- [ ] `config.js` preenchido com dados reais (nome, WhatsApp, região).
+- [ ] Nome, WhatsApp e região no `index.html` conferidos com a operação real.
 - [ ] Número de WhatsApp testado no celular e no desktop.
 - [ ] E-mail/endereço removidos ou confirmados.
 - [ ] Domínio definido; `canonical`, `og:url`, `og:image`, `robots.txt`, `sitemap.xml`, `CNAME` atualizados.
