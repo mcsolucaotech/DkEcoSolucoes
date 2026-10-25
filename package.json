@@ -1,0 +1,13 @@
+{
+  "name": "dkecosolucoes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page estática da DK Eco Soluções — coleta de eletrônicos em São Paulo e litoral paulista.",
+  "scripts": {
+    "verify": "node scripts/verify.mjs"
+  },
+  "devDependencies": {
+    "html-validate": "11.17.0",
+    "linkinator": "8.1.0"
+  }
+}

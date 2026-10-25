@@ -4,10 +4,10 @@
  * Não coloque senhas, tokens privados ou dados sensíveis neste arquivo.
  */
 window.SITE_CONFIG = {
-  businessName: "Coleta de Eletrônicos",
+  businessName: "DK Eco Soluções",
   region: "São Paulo e litoral (consulte os municípios atendidos)",
   // Informe somente números: código do país + DDD + telefone. Ex.: 5511999999999
-  whatsappNumber: "",
+  whatsappNumber: "5511976517285",
   // Ex.: contato@seudominio.com.br
   email: "",
   // Domínio canônico completo, sem barra no final. Ex.: https://www.seudominio.com.br

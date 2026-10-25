@@ -399,3 +399,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# macOS folder metadata (arquivos .DS_Store já rastreados permanecem; remover do index é decisão do usuário)
+.DS_Store

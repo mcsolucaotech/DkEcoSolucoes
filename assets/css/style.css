@@ -988,7 +988,8 @@
     }
 
     /* Animações de entrada */
-    .revelar {
+    /* Progressive enhancement: sem JS (.js ausente), .revelar fica visível por padrão. */
+    .js .revelar {
       opacity: 0;
       transform: translateY(36px);
       transition:
@@ -996,7 +997,7 @@
         transform 700ms ease;
     }
 
-    .revelar.visivel {
+    .js .revelar.visivel {
       opacity: 1;
       transform: translateY(0);
     }

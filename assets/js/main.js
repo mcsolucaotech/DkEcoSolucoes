@@ -162,6 +162,9 @@ if ("IntersectionObserver" in window) {
   );
 
   elementosRevelados.forEach((elemento) => observador.observe(elemento));
+} else {
+  // Sem IntersectionObserver: mostra todo o conteúdo de imediato (não fica oculto).
+  document.querySelectorAll(".revelar").forEach((elemento) => elemento.classList.add("visivel"));
 }
 
 const siteUrl = String(config.siteUrl ?? "").replace(/\/$/, "");
